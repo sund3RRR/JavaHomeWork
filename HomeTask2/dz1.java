@@ -2,6 +2,40 @@ package HomeTask2;
 
 import java.util.Scanner;
 
+class Car
+{
+    String model;
+    int maxSpeed;
+    int weight;   
+    Car()
+    {
+        this.model = "Undefined";
+        this.maxSpeed = 0;
+        this.weight = 0;
+    }
+    Car(String m, int mS, int w)
+    {
+        this.model = m;
+        this.maxSpeed = mS;
+        this.weight = w;
+    }
+    Car(String m)
+    {
+        this.model = m;
+        this.maxSpeed = 0;
+        this.weight = 0;
+    }
+    void Show()
+    {
+        if(!model.equals("Undefined"))
+            System.out.println("model - " + model);
+        if(maxSpeed != 0)
+            System.out.println("maxSpeed - " + maxSpeed);
+        if(weight != 0)
+            System.out.println("weight - " + weight);
+    }
+}
+
 public class dz1 {
         public static boolean IsInteger(String Number) {
             try {
@@ -42,26 +76,5 @@ public class dz1 {
 
             MyCar.Show();
         }
-    }
-}
-class Car
-{
-    String model;
-    int maxSpeed;
-    int weight;   
-    Car()
-    {
-        model = "Undefined";
-        maxSpeed = 0;
-        weight = 0;
-    }
-    void Show()
-    {
-        if(!model.equals("Undefined"))
-            System.out.println("model - " + model);
-        if(maxSpeed != 0)
-            System.out.println("maxSpeed - " + maxSpeed);
-        if(weight != 0)
-            System.out.println("weight - " + weight);
     }
 }
