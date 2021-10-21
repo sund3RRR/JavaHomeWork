@@ -17,7 +17,7 @@ public class task2
         for(int i = 0; i < 20000; i++)
             result += str;
         endTime = System.currentTimeMillis();
-        System.out.println("Time in ms (concatenation way): " + (endTime - startTime)/1000.0 + "ms");
+        System.out.println("Time in ms (concatenation way): " + (endTime - startTime) + "ms");
 
 
         StringBuilder sb = new StringBuilder(str);
@@ -26,6 +26,6 @@ public class task2
         for(int i = 0; i < 20000; i++)
             sb.append(str);
         endTime = System.currentTimeMillis(); 
-        System.out.println("Time in ms (stringBuilder way): " + (endTime - startTime)/1000.0 + "ms");
+        System.out.println("Time in ms (stringBuilder way): " + (endTime - startTime) + "ms");
     }
 }
