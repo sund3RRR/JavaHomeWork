@@ -52,29 +52,36 @@ public class dz1 {
 
         while(true)
         {
-            Car MyCar = new Car();
-            System.out.println("Enter model");
-            MyCar.model = userScanner.next();
-            
-            System.out.println("Enter maxspeed");
-            String MaxSpeed = userScanner.next();
-            while(!IsInteger(MaxSpeed))
-            {
+            try{
+                Car MyCar = new Car();
+                System.out.println("Enter model");
+                MyCar.model = userScanner.next();
+                
                 System.out.println("Enter maxspeed");
-                MaxSpeed = userScanner.next();
-            }
-            MyCar.maxSpeed = Integer.parseInt(MaxSpeed); 
-            
-            System.out.println("Enter weight");
-            String Weight = userScanner.next();
-            while(!IsInteger(Weight))
-            {
+                String MaxSpeed = userScanner.next();
+                while(!IsInteger(MaxSpeed))
+                {
+                    System.out.println("Enter maxspeed");
+                    MaxSpeed = userScanner.next();
+                }
+                MyCar.maxSpeed = Integer.parseInt(MaxSpeed); 
+                
                 System.out.println("Enter weight");
-                Weight = userScanner.next();
-            }
-            MyCar.weight = Integer.parseInt(Weight); 
+                String Weight = userScanner.next();
+                while(!IsInteger(Weight))
+                {
+                    System.out.println("Enter weight");
+                    Weight = userScanner.next();
+                }
+                MyCar.weight = Integer.parseInt(Weight); 
 
-            MyCar.Show();
+                MyCar.Show();
+            }
+            catch(Exception ex)
+            {
+                userScanner.close();
+                break;
+            }
         }
     }
 }
