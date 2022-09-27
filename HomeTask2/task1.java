@@ -36,7 +36,7 @@ class Car
     }
 }
 
-public class dz1 {
+public class task1 {
         public static boolean IsInteger(String Number) {
             try {
                 Integer.parseInt(Number);

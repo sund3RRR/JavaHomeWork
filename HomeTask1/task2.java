@@ -3,7 +3,7 @@ package HomeTask1;
 import java.util.Scanner;
 import java.lang.System;
 
-public class dz2 {
+public class task2 {
     public static void main(String[] args) {
         String[] names = {"Tanya", "Masha", "Vika", "Rita", "Ilya", "Vova", "Misha", "Sergay", "Mark", "Dima"};
         

@@ -1,6 +1,6 @@
 package HomeTask2;
 
-public class dz2 {
+public class task2 {
     public static int GetVolume(Parallelepiped Parall) {
         return Parall.getASide() * Parall.getBSide() * Parall.getCSide();
     }

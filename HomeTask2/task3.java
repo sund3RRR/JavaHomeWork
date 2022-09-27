@@ -1,6 +1,6 @@
 package HomeTask2;
 
-public class dz3 {
+public class task3 {
     
 }
 

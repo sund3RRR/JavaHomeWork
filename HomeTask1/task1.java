@@ -3,7 +3,7 @@ package HomeTask1;
 import java.lang.System;
 import java.util.Scanner;
 
-class dz1 {
+class task1 {
     public static boolean IsInteger(String Number) {
         try {
             Integer.parseInt(Number);
